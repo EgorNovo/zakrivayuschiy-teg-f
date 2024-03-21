@@ -4,3 +4,55 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --header-font-weight: 785; /* 785 */
+  --article-font-weight: 465; /* 465 */
+  --border-color: rgba(0, 204, 20, 1); /* rgba(0, 204, 20, 1)  */
+  --active-color: rgba(0, 204, 20, 0.6);
+  --background-color: black; /* black */
+  --backgound-gradient-line: rgba(0, 204, 20, 0.6);
+  --background-gradient-start: #007f0c;
+  --background-gradient-end: #004306;
+  --difference-mod-color: var(--border-color);
+}
+
+:root.theme-light {
+  --header-font-weight: 700; /* 785 */
+  --article-font-weight: 400; /* 465 */
+  --border-color: black; /* rgba(0, 204, 20, 1)  */
+  --active-color: rgba(0,0,0, 0.6);
+  --background-color: white; /* black */
+  --backgound-gradient-line: #d3d3d3;
+  --background-gradient-start: #e7e7e7;
+  --background-gradient-end: #1a1a1a;
+  --difference-mod-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-font-weight: 785; /* 785 */
+    --article-font-weight: 465; /* 465 */
+    --border-color: rgba(0, 204, 20, 1); /* rgba(0, 204, 20, 1)  */
+    --active-color: rgba(0, 204, 20, 0.6);
+    --background-color: black; /* black */
+    --backgound-gradient-line: rgba(0, 204, 20, 0.6);
+    --background-gradient-start: #007f0c;
+    --background-gradient-end: #004306;
+    --difference-mod-color: var(--border-color);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-font-weight: 700; /* 785 */
+    --article-font-weight: 400; /* 465 */
+    --border-color: black; /* rgba(0, 204, 20, 1)  */
+    --active-color: rgba(0,0,0, 0.6);
+    --background-color: white; /* black */
+    --backgound-gradient-line: #d3d3d3;
+    --background-gradient-start: #e7e7e7;
+    --background-gradient-end: #1a1a1a;
+    --difference-mod-color: var(--background-color);
+  }
+}

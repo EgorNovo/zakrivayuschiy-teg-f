@@ -1,1 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --inter-font: 'Inter-Variable', serif;
+  --press-font: PressStart2P-Regular, serif;
+  --header-font-weight: 700; /* 785 */
+  --article-font-weight: 400; /* 465 */
+  --border-color: black; /* rgba(0, 204, 20, 1)  */
+  --active-color: rgba(0,0,0, 0.6);
+  --background-color: white; /* black */
+  --backgound-gradient-line: #d3d3d3;
+  --background-gradient-start: #e7e7e7;
+  --background-gradient-end: #1a1a1a;
+  --icon-fill: rgba(255, 0, 0, 1);
+  --difference-mod-color: var(--background-color);
+}

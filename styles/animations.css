@@ -12,3 +12,76 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  @keyframes active-menu-button {
+    from {
+      left: -1px;
+    }
+    to {
+      left: -5px;
+    }
+  }
+
+  @keyframes heart-beat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.15);
+    }
+  }
+
+  @keyframes sparks-flashing {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  /*      animations header     */
+  .theme-menu__button { 
+    transition: ease color .3s ;
+  }
+
+  .theme-menu__button::after {
+    transition: ease width .3s;
+  }
+
+  .theme-menu__button:disabled::before {
+    animation: active-menu-button ease-in-out alternate infinite .5s;
+  }
+
+  /*      animations card     */
+  .button {
+    transition: ease color .3s, ease box-shadow .3s;
+  }
+
+  .button::after {
+    transition: ease-in-out transform .5s;
+  }
+
+  /*      animations heart-icon     */
+
+  .core {
+    transition: linear fill .3s;
+  }
+
+  .main-body {
+    transition: linear fill .3s .05s;
+  }
+
+  .contour {
+    transition: linear fill .3s .06s;
+  }
+
+  .like-icon.is-liked .heart {
+    animation: heart-beat ease-in alternate .3s .1s;
+  }
+
+  .like-icon.is-liked .sparks { 
+    animation: sparks-flashing ease-in alternate .3s .3s;
+  }
+}
