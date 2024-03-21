@@ -350,7 +350,7 @@ dialog::backdrop {
 }
 
 .filter-blur {
-  filter: blur(2px);
+  filter: blur(2px) grayscale(5%);
 }
 
 .filter-sepia {
@@ -358,7 +358,7 @@ dialog::backdrop {
 }
 
 .filter-invert {
-  filter: invert(0.3);
+  filter: invert(0.3) grayscale(10%);
 }
 
 .filter-hue-rotate {

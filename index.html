@@ -584,12 +584,14 @@
             Вставьте дискету, чтобы продолжить
           </span>
         </div>
-        <button class="button dialog__content_button"
-                type="button"
-                onclick="window['dialog-id'].close();"
-        >
-          Ok
-        </button>
+        <form method="dialog">
+          <button class="button dialog__content_button"
+                  type="button"
+                  onclick="window['dialog-id'].close();"
+          >
+            Ok
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
