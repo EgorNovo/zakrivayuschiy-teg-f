@@ -151,7 +151,7 @@
 
 .section-post__card_image {
   width: 100%;
-  border-block-end: 2px solid var(--border-color);  
+  border-block-end: 2px solid var(--border-color);
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1/1;
@@ -162,7 +162,7 @@
   top: 23px;
   right: 3%;
   opacity: 0.6;
-  color: var(--border-color); 
+  color: var(--border-color);
   font-family: var(--press-font);
   font-weight: 400;
   font-size: 14px;
@@ -175,7 +175,7 @@
   (-webkit-text-stroke: 1px var(--background-color))
 ) {
   .section-post__card_image_description {
-    text-stroke: 1px var(--background-color); 
+    text-stroke: 1px var(--background-color);
     -webkit-text-stroke: 1px var(--background-color);
   }
 }
@@ -195,7 +195,7 @@
   height: 36px;
   border:none;
   border-style: none;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .card__like-button {
@@ -239,7 +239,7 @@
   appearance: none;
 }
 
-.button:focus-visible { 
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
 }
 
@@ -337,6 +337,10 @@ dialog::backdrop {
   padding-block: 10px;
 }
 
+.filter-saturate {
+  filter: saturate(1.2);
+}
+
 .filter-brightness {
   filter: brightness(150%);
 }
@@ -362,5 +366,5 @@ dialog::backdrop {
 }
 
 .filter-sum {
-  filter:contrast(20%) brightness(150%) hue-rotate(90%);
+  filter:contrast(22%) brightness(140%) hue-rotate(80%);
 }

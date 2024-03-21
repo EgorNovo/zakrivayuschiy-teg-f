@@ -42,7 +42,7 @@
     }
   }
   /*      animations header     */
-  .theme-menu__button { 
+  .theme-menu__button {
     transition: ease color .3s ;
   }
 
@@ -81,7 +81,7 @@
     animation: heart-beat ease-in alternate .3s .1s;
   }
 
-  .like-icon.is-liked .sparks { 
+  .like-icon.is-liked .sparks {
     animation: sparks-flashing ease-in alternate .3s .3s;
   }
 }
