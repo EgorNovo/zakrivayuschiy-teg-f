@@ -12,33 +12,33 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-.core { 
-  fill: var(--background-color); 
-} 
- 
-.main-body { 
-  fill: var(--background-color); 
-  transition: linear fill .3s .05s; 
-} 
- 
-.like-icon:hover .core, .like-icon:hover .main-body { 
-  fill: var(--border-color); 
-} 
- 
-.like-icon:active .core, .like-icon:active .main-body { 
-  fill: var(--icon-fill); 
-} 
- 
-.like-icon.is-liked .core, .like-icon.is-liked .main-body, .like-icon.is-liked .contour { 
-  fill: var(--icon-fill); 
-} 
- 
-.sparks { 
-  opacity: 0; 
-} 
- 
-.heart { 
-  transform-origin: 50% 50%; 
+.core {
+  fill: var(--background-color);
+}
+
+.main-body {
+  fill: var(--background-color);
+  transition: linear fill .3s .05s;
+}
+
+.like-icon:hover .core, .like-icon:hover .main-body {
+  fill: var(--border-color);
+}
+
+.like-icon:active .core, .like-icon:active .main-body {
+  fill: var(--icon-fill);
+}
+
+.like-icon.is-liked .core, .like-icon.is-liked .main-body, .like-icon.is-liked .contour {
+  fill: var(--icon-fill);
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.heart {
+  transform-origin: 50% 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
