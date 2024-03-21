@@ -11,7 +11,7 @@
   --border-color: rgba(0, 204, 20, 1); /* rgba(0, 204, 20, 1)  */
   --active-color: rgba(0, 204, 20, 0.6);
   --background-color: black; /* black */
-  --backgound-gradient-line: rgba(0, 204, 20, 0.6);
+  --backgound-gradient-line: black;
   --background-gradient-start: #007f0c;
   --background-gradient-end: #004306;
   --difference-mod-color: var(--border-color);
@@ -36,7 +36,7 @@
     --border-color: rgba(0, 204, 20, 1); /* rgba(0, 204, 20, 1)  */
     --active-color: rgba(0, 204, 20, 0.6);
     --background-color: black; /* black */
-    --backgound-gradient-line: rgba(0, 204, 20, 0.6);
+    --backgound-gradient-line: black;
     --background-gradient-start: #007f0c;
     --background-gradient-end: #004306;
     --difference-mod-color: var(--border-color);

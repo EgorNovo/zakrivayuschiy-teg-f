@@ -31,7 +31,7 @@
 }
 
 .header {
-  max-width: 700px;
+  max-inline-size: 700px;
   margin: auto;
   padding-block-start: 100px;
   font-family: var(--press-font);
@@ -43,7 +43,6 @@
   justify-content: end;
   align-items: center;
   width: 100%;
-  height: 49vh;
   border: 2px solid var(--border-color);
   color: var(--border-color);
   background-color: var(--background-color);
@@ -51,6 +50,7 @@
 
 .header__main-header {
   font-size: clamp(3.0625rem, 2.4847rem + 2.4653vw, 4.0625rem);
+  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
 }
 
 .header__description {
@@ -67,12 +67,16 @@
   margin-block-end: 25px;
 }
 
+.theme-menu__item button {
+  cursor: pointer;
+}
+
 .theme-menu__button {
   position: relative;
   border: none;
   border-style: none;
   padding-inline-start: 20px;
-  font-size: clamp(0.875rem, 0.55rem + 1.3867vw, 1.4375rem);
+  font-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
 }
@@ -199,7 +203,9 @@
 }
 
 .card__like-button {
-  padding: 9px 31px;
+  padding-block: 9px;
+  inline-size: 130px;
+  font-size: 14px;
 }
 
 .button {
@@ -210,6 +216,7 @@
   fill: var(--border-color);
   font-family: var(--press-font);
   background-color: var(--background-color);
+  cursor: pointer;
 }
 
 .button::after {
@@ -252,7 +259,6 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
-
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   padding: 15px 18px;
   font-size: 14px;
@@ -273,35 +279,6 @@
   }
 }
 
-.core {
-  fill: var(--background-color);
-}
-
-.main-body {
-  fill: var(--background-color);
-  transition: linear fill .3s .05s;
-}
-
-.like-icon:hover .core, .like-icon:hover .main-body {
-  fill: var(--border-color);
-}
-
-.like-icon:active .core, .like-icon:active .main-body {
-  fill: var(--icon-fill);
-}
-
-.like-icon.is-liked .core, .like-icon.is-liked .main-body, .like-icon.is-liked .contour {
-  fill: var(--icon-fill);
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.heart {
-  transform-origin: 50% 50%;
-}
-
 .dialog {
   position: fixed;
   inset: 0;
@@ -312,6 +289,8 @@
   font-family: var(--press-font);
   font-size: 14px;
   background-color: var(--background-color);
+  text-transform: uppercase;
+  line-height: 21px;
 }
 
 dialog:not([open]) {
@@ -320,21 +299,21 @@ dialog:not([open]) {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.3);
-  backdrop-filter: blur(3px);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .dialog__content {
   display: grid;
   grid-template-columns: 39px 1fr;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .dialog__content_button {
   width: 100%;
   margin-block-start: 30px;
-  padding-block: 10px;
+  padding-block: 12.5px;
+  text-transform: uppercase;
 }
 
 .filter-saturate {
