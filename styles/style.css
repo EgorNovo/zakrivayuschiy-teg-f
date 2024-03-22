@@ -200,6 +200,7 @@
   border:none;
   border-style: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -252,15 +253,17 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--border-color);
+  outline-offset: -2px;
 }
 
 .button-safe {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  padding: 15px 18px;
+  padding-block: 15px;
   font-size: 14px;
 }
 
